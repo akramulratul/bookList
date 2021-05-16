@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>BookList</title>
+</head>
+<body>
+
+<header>
+            <div>
+                <h1><i class="fas fa-book-reader"></i>JS <span class="headingStyle">Book</span>List</h1>
+            </div>
+</header>
+<form>
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" id="bookTitle"class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="Author">Author</label>
+        <input type="text" id="bookAuthor" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="Year">Published Date</label>
+        <input type="text" id="bookYear"class="form-control">
+    </div>
+    <input type="submit" id="button" value="Add Book" class="btn btn-warning btn-block"/>
+</form>
+    <table class="table table-striped mt-5 text-center">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th> 
+            </tr>
+        </thead>
+        <tbody id="book-list">    
+        </tbody>
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>
